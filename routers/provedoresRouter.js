@@ -3,7 +3,7 @@ import express from "express"
 const router = express.Router()
 
 router.get(
-    './provedores',
+    '/provedores',
     (_, res) => {
         res.status(200).json({
             message: 'Listaaaado de proveeedores'
@@ -12,7 +12,7 @@ router.get(
 )
 
 router.post(   // Crear
-    './provedores/:id',
+    '/provedores/:id',
     (_, res) => {
         res.status(200).json({
             message: 'Crear proveeedores',
@@ -23,7 +23,7 @@ router.post(   // Crear
 
 
 router.delete(
-    './provedores/:id',
+    '/provedores/:id',
     (req, res) => {
         res.status(200).json({
             message: 'Borradooo de proveeedores',
@@ -34,7 +34,7 @@ router.delete(
 
 
 router.put(   
-    './provedores/:id',
+    '/provedores/:id',
     (req, res) => {
         res.status(200).json({
             message: 'Actualizar proveeedores',
